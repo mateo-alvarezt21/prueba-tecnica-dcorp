@@ -1,0 +1,150 @@
+.multimedia{
+    padding-top: 35px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.multimedia__progressbar{
+    width: 500px;
+    height: 200px;
+    background-color: #0E0F0F;
+    border: 2px solid #42331A ;
+}
+
+.multimedia__progressbar h2{
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 22px;
+}
+
+.carga {
+    width: 84%;
+    height: 47px;
+    margin-top: 38px;
+    margin-left: 33px;
+    border-radius: 15px;
+    background-color: #f1f1f1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carga::before {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(180deg, #31969D 0%, #65E6F4 31.77%, #24AEBD 66.15%, #1299A8 98.96%);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.multimedia__video{
+    width: 400px;
+    height: 200px;
+    background-color: #0E0F0F;
+    border: 2px solid #42331A ;
+    display: grid;
+    place-content: center;
+}
+
+.video{
+    display: grid;
+    place-content: center;
+    width: 395px;
+    height: 195px;
+}
+
+.multimedia__img{
+    width: 400px;
+    height: 200px;
+    background-color: #0E0F0F;
+    border: 2px solid #42331A ;
+    display: grid;
+    place-content: center;
+}
+
+.img{
+    width: 395px;
+    height: 195px;
+    background-image: url('https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2018/12/infinity-war.jpg?w=1000&quality=50&strip=all&ssl=1');
+    background-size: contain;
+    background-position: center;
+}
+
+@media (max-width: 1400px) {
+
+    .multimedia__progressbar{
+        width: 33%;
+    }
+    
+    .multimedia__video{
+        width: 25%;
+    }
+    
+    .video{
+        width: 100%;
+    }
+    
+    .multimedia__img{
+        width: 25%;
+    }
+    
+    .img{
+        width: 270px;
+        height: 195px;
+        background-repeat: no-repeat;
+    }
+}
+@media (max-width: 875px) {
+    
+    .img{
+        width: 180px;
+    }
+    .carga {
+        margin-left: 16px;
+      }
+}
+
+@media (max-width: 770px) {
+    
+    .multimedia {
+        padding-bottom: 42px;
+      }
+}
+
+@media (max-width: 500px) {
+    .multimedia{
+        flex-direction: column;
+        align-items: center;
+    }
+    .multimedia__progressbar{
+        width: 60%;
+    }
+    
+    .multimedia__video{
+        width: 60%;
+    }
+    
+    .video{
+        width: 100%;
+    }
+    
+    .multimedia__img{
+        width: 60%;
+    }
+    
+    .img{
+        width: 289px;
+    }
+   
+}
+@media (max-width: 400px) {
+
+    .img{
+        width: 180px;
+    }
+}
+
