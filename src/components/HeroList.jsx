@@ -31,15 +31,15 @@ const HeroList = () => {
                 {heros?.data.results.map(hero => (
                     <div className="card-hero" key={hero?.id}>
                         <div className='titulo'>
-                            <img className='img-izq' src="./public/formanivel.png" alt="" />
+                            <img className='img-izq' src="/formanivel.png" alt="" />
                             <h3>{hero?.name}</h3>
-                            <img className='img-der' src="./public/formanivel1.png" alt="" />
+                            <img className='img-der' src="/formanivel1.png" alt="" />
                         </div>
                         
                         <figure className="container-img">
-                            <img className='circulo' src="./public/circulolineas.png" alt="" />
+                            <img className='circulo' src="/circulolineas.png" alt="" />
                             <img className='container-img-img' src={`${hero?.thumbnail.path}.${hero?.thumbnail.extension}`} alt="" />
-                            <img className='diamantes' src="./public/diamantes.png" alt="" />
+                            <img className='diamantes' src="/diamantes.png" alt="" />
                         </figure>
                         <div className="info__pelis">
                             <div className='hero__comics'>
